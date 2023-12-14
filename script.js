@@ -33,3 +33,16 @@ export function exercise03(args) {
 
 }
 
+export function exercise05(args) {
+  const input = args
+  const result = []
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].charCodeAt()
+    if (currentElement >= 65 && currentElement <= 90) {
+      return true
+    }
+  }
+ 
+  return false
+}
